@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Mali - Certificates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Certificate Page Specific Styles */
+        .certificates-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .certificate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .certificate-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow-color);
+            transition: var(--transition);
+            color: var(--light-color);
+        }
+        
+        .certificate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px var(--shadow-color);
+        }
+        
+        .certificate-image {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .certificate-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .certificate-card:hover .certificate-image img {
+            transform: scale(1.05);
+        }
+        
+        .certificate-content {
+            padding: 20px;
+        }
+        
+        .certificate-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--light-color);
+        }
+        
+        .certificate-content p {
+            color: var(--light-color);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .certificate-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--light-color);
+            opacity: 0.8;
+        }
+        
+        .certificate-page {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-bg.svg') no-repeat center center/cover;
+            min-height: 100vh;
+            padding: 100px 0;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--light-color);
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            color: var(--light-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--light-color);
+            margin-bottom: 30px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .back-link i {
+            margin-right: 8px;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">VM</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="certificates.html" class="active">Certificates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Certificates Section -->
+    <section class="certificate-page">
+        <div class="certificates-container">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            
+            <div class="page-header">
+                <h1>My Certificates</h1>
+                <p>A collection of my professional certifications and achievements that demonstrate my skills and continuous learning journey.</p>
+            </div>
+            
+            <div class="certificate-grid">
+                <!-- Certificate 1 - Apna College DSA with Java -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/ApnaCollege.jpg" target="_blank">
+                            <img src="images/ApnaCollege.jpg" alt="Apna College DSA with Java Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Data Structures and Algorithms with Java</h3>
+                        <p>Mastered DSA concepts in Java through the Alpha course, enhancing problem-solving skills.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> Apna College</span>
+                            <span><i class="far fa-calendar-alt"></i> 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 2 - Udemy AI Tools -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/CodeAI.jpg" target="_blank">
+                            <img src="images/CodeAI.jpg" alt="Udemy AI Tools Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Boost Your Productivity & Write Better Code with AI Tools</h3>
+                        <p>Mastered AI-powered development tools to enhance coding efficiency and produce better software solutions.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> Udemy</span>
+                            <span><i class="far fa-calendar-alt"></i> June 2, 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3 - Felix-ITs FullStack Development -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/FelixIt.jpg" target="_blank">
+                            <img src="images/FelixIt.jpg" alt="FullStack Development Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>FullStack Development Workshop</h3>
+                        <p>Gained expertise in building complete web applications using modern front-end and back-end technologies.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> Felix-ITs</span>
+                            <span><i class="far fa-calendar-alt"></i> March 20, 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 4 - Udemy HTML5 and CSS3 -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/HTMLCSS.jpg" target="_blank">
+                            <img src="images/HTMLCSS.jpg" alt="HTML5 and CSS3 Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Mastering HTML5 and CSS3 (Beginner Level)</h3>
+                        <p>Developed proficiency in creating responsive, modern web layouts using HTML5 and CSS3 standards.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> Udemy</span>
+                            <span><i class="far fa-calendar-alt"></i> Jan 1, 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 5 - Accenture Job Simulation -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/JobSimulationForage.jpg" target="_blank">
+                            <img src="images/JobSimulationForage.jpg" alt="Accenture Job Simulation Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Technology Apprenticeship Job Simulation</h3>
+                        <p>Applied technical knowledge to real-world business scenarios and developed practical solutions to industry challenges.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> Accenture & Forage</span>
+                            <span><i class="far fa-calendar-alt"></i> July 10, 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 6 - Red Hat Python -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/Redhat.jpg" target="_blank">
+                            <img src="images/Redhat.jpg" alt="Red Hat Python Programming Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Introduction to Python Programming</h3>
+                        <p>Gained proficiency in Python programming fundamentals, data structures, and practical implementation skills.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> Red Hat Training</span>
+                            <span><i class="far fa-calendar-alt"></i> April 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 7 - Generative AI -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/GenAi.jpg" target="_blank">
+                            <img src="images/GenAi.jpg" alt="Generative AI Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Foundation Course on Generative AI</h3>
+                        <p>Developed understanding of AI models, prompt engineering, and practical applications of generative AI technologies.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> TechSaksham (Microsoft & SAP)</span>
+                            <span><i class="far fa-calendar-alt"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 8 - Prompt Engineering -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/PromptEng.jpg" target="_blank">
+                            <img src="images/PromptEng.jpg" alt="Prompt Engineering Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Prompt Engineering for ChatGPT</h3>
+                        <p>Mastered techniques for crafting effective prompts to generate high-quality, relevant AI responses.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> Great Learning Academy</span>
+                            <span><i class="far fa-calendar-alt"></i> July 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 9 - Industrial Training -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/kasnet.jpg" target="_blank">
+                            <img src="images/kasnet.jpg" alt="Industrial Training Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>MSBTE Industrial Training</h3>
+                        <p>Gained hands-on experience in real-world industry projects and professional workplace skills through six-week training.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> KasNet Technologies</span>
+                            <span><i class="far fa-calendar-alt"></i> September 2021</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 10 - Java -->
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <a href="images/wiselearnJava.jpg" target="_blank">
+                            <img src="images/wiselearnJava.jpg" alt="Java Programming Certificate">
+                        </a>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Java Programming</h3>
+                        <p>Developed applications using Java programming language, object-oriented principles, and standard libraries.</p>
+                        <div class="certificate-meta">
+                            <span><i class="fas fa-building"></i> WiseLearn</span>
+                            <span><i class="far fa-calendar-alt"></i> 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">VM</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/mali-vaishnavi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:malivaishnavi291103@gmail.com" class="email-link"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+918080041785" class="phone-link"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vaishnavi Mali. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
